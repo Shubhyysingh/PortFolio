@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-light: #828282;
+  --color-primary: #27ae60;
+  --color-dark: #212121;
+  --color-border: #4f4f4f;
+  --color-bg: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  outline: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+h1 {
+  font-size: 40px;
+  font-weight: 4500;
+  color: var(--color-white);
+  line-height: 50px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+  color: var(--color-white);
+}
+h4 {
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 31px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: var(--color-white);
+}
+p {
+  color: var(--color-white);
+  font-size: 17px;
+  line-height: 23px;
+}
+.sks {
+  font-family: cursive;
+  color: rgba(255, 157, 1, 0.507);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62px;
+}
+.btn {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--color-white);
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  color: var(--color-white);
+}
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+.btn-primary {
+  background: var(--color-primary);
+  border: transparent;
+}
+.container {
+  max-width: 1360px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* ---------START NAV BAR------- */
+nav {
+  background-color: rgba(15, 22, 22, 0.953);
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  font-size: 32px;
+  height: 120px;
+  width: 230px;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-container ul li a {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.4s ease;
+}
+.nav-container ul li a:hover {
+  color: var(--color-primary);
+}
+/* ---------END NAV BAR------- */
+
+/* ---------START HEADER SECTION------- */
+header {
+  margin-top: 190px;
+}
+.header h1 {
+  font-size: 72px;
+  line-height: 94px;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 56% 44%;
+  align-items: center;
+}
+.header-right img {
+  display: block;
+  width: 385px;
+  height: 390px;
+  /* margin: 15px; */
+  margin-left: 65px;
+  padding: 25px;
+}
+.header-container p {
+  margin: 2rem 0 1rem;
+  width: 90%;
+}
+.header-container h5 {
+  margin: 1rem;
+  color: var(--color-light);
+}
+.header-action-aria {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+small {
+  font-size: 17px;
+}
+/* ---------END HEADER SECTION------- */
+
+/* ---------START ABOUT SECTION------- */
+#About {
+  text-align: center;
+  padding-top: 90px;
+}
+.section h1 {
+  text-align: center;
+}
+.about-container p {
+  width: 62%;
+  margin: 40px auto;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.about-content img {
+  width: 39px;
+  height: 39px;
+}
+.about-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 6px;
+  text-align: center;
+}
+/* ---------END ABOUT SECTION------- */
+
+/* ---------START PROJECT SECTION------- */
+#Project {
+  text-align: center;
+  padding-top: 120px;
+}
+.Project {
+  padding-top: 120px;
+}
+.Project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 43px;
+  margin-top: 100px;
+}
+.Project-article {
+  background: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 50px;
+  border-radius: 4px solid transparent;
+  transition: 0.4s ease;
+}
+.Project-article img {
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: 209px;
+}
+/* ---------END PROJECT SECTION------- */
+
+/* ---------START SKILL SECTION------- */
+#Skills {
+  text-align: center;
+  padding-top: 120px;
+}
+.skills-container {
+  margin-top: 70px;
+  background: var(--color-dark);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.skills-article {
+  margin: auto;
+  text-align: center;
+}
+.skills-article h4 {
+  font-size: 40px;
+  line-height: 94px;
+  color: var(--color-border);
+  font-weight: 600;
+}
+.skills-article h5 {
+  color: #1c5c08;
+}
+.skills-article img {
+  width: 99px;
+  height: 100px;
+}
+/* ---------END SKILL SECTION------- */
+
+/* ---------START CONTACT SECTION------- */
+#contact {
+  text-align: center;
+  padding-top: 120px;
+}
+.contact-container {
+  margin-top: 90px;
+}
+.git {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+form input {
+  padding: 10px 0;
+  background: transparent;
+  margin-bottom: 30px;
+  color: var(--color-light);
+  border: none;
+  box-shadow: 0 1px 0 0 var(--color-border);
+  transition: 0.4s ease;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+form input:focus {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: none;
+}
+.form-bottom {
+  display: flex;
+  flex-direction: coloumn;
+  gap: 30px;
+  align-items: center;
+}
+.form-bottom textarea {
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  background: transparent;
+  resize: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-top: 17px;
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+}
+.form-bottom textarea:focus {
+  border-color: var(--color-primary);
+}
+/* ---------END CONTACT SECTION------- */
+
+/* ---------Start footer SECTION------- */
+.footercontainer {
+  padding-top: 720px;
+  text-align: center;
+  height: 95%;
+  width: 100px;
+  padding: 70px 30px 20px;
+}
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialicons a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 50%;
+}
+.socialicons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialicons a:hover {
+  background-color: #111;
+  transition: 0.4s;
+}
+.socialicons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footerbottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom p {
+  color: white;
+}
+.design {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/* ---------END CONTACT SECTION------- */
+
+/* ---------EXTRAA CLASS SECTION------- */
+.naWinScroll {
+  background: var(--color-dark);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
+}
+/* ---------END CONTACT SECTION------- */
